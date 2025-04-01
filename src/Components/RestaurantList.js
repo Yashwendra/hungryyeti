@@ -2,16 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import {
   Container,
-  Grid,
   Card,
   CardContent,
-  CardMedia,
   Typography,
   Box,
-  Chip,
-  Rating,
   IconButton,
-  useTheme,
+
   TextField,
   Button,
   InputAdornment,
@@ -124,7 +120,7 @@ const categories = [
 ];
 
 const RestaurantList = () => {
-  const theme = useTheme();
+ 
   const [isLoaded, setIsLoaded] = useState(false);
   const [favorites, setFavorites] = useState({});
   const [searchQuery, setSearchQuery] = useState("");

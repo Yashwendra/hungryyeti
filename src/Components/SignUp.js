@@ -12,7 +12,6 @@ import {
   Grid,
   Checkbox,
   FormControlLabel,
-  Alert,
   IconButton,
   InputAdornment,
   LinearProgress,

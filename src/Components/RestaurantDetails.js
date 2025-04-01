@@ -14,7 +14,7 @@ import {
   Button,
   IconButton,
   Paper,
-  Divider,
+
   useTheme,
 } from '@mui/material';
 import {
@@ -24,7 +24,7 @@ import {
   FavoriteBorder,
   ShoppingCart,
   Restaurant,
-  LocalDining,
+
   Circle,
   Stop,
 } from '@mui/icons-material';
@@ -32,7 +32,7 @@ import { useParams } from 'react-router-dom';
 
 // Sample restaurant data (you can replace this with API calls)
 const restaurantData = {
-  id: 1,
+ 
   name: "The Gourmet Kitchen",
   image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
   rating: 4.8,

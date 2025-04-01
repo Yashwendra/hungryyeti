@@ -23,7 +23,7 @@ import {
   Snackbar,
   CircularProgress,
 } from '@mui/material';
-import { LocalDining, People, Restaurant, LocalFireDepartment } from '@mui/icons-material';
+import { LocalDining, People,  LocalFireDepartment } from '@mui/icons-material';
 import './BookTable.css';
 import { useTheme } from '@mui/material/styles';
 

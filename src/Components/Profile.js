@@ -8,7 +8,7 @@ import {
   Button,
   Box,
   TextField,
-  Divider,
+  
   List,
   ListItem,
   ListItemIcon,
@@ -24,8 +24,7 @@ import {
   Person,
   LocationOn,
   CreditCard,
-  NotificationsOutlined,
-  SecurityOutlined,
+
   Edit,
   Save,
   Restaurant,
