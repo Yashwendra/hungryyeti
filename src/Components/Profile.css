@@ -1,0 +1,96 @@
+.profile-avatar {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-avatar:hover .avatar-overlay {
+  opacity: 1;
+}
+
+.avatar-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.profile-section {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.edit-button {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.profile-card:hover .edit-button {
+  opacity: 1;
+}
+
+.MuiTab-root {
+  min-width: 120px !important;
+}
+
+.MuiTabs-scrollButtons.Mui-disabled {
+  opacity: 0.3;
+}
+
+/* Success Alert Animation */
+.success-alert {
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .MuiTab-root {
+    min-width: 100px !important;
+    padding: 6px 12px !important;
+  }
+  
+  .profile-section {
+    padding: 16px !important;
+  }
+  
+  .MuiGrid-container {
+    margin-top: 16px !important;
+  }
+} 

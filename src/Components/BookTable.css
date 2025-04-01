@@ -1,0 +1,167 @@
+.area-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.area-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1) !important;
+}
+
+.area-card .MuiCardMedia-root {
+  position: relative;
+  overflow: hidden;
+}
+
+.area-card .MuiCardMedia-root::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.area-card:hover .MuiCardMedia-root::after {
+  opacity: 1;
+}
+
+.area-card .MuiCardContent-root {
+  background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
+}
+
+.area-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.area-chip {
+  transition: transform 0.2s ease;
+}
+
+.area-chip:hover {
+  transform: scale(1.05);
+}
+
+/* Form Styles */
+.booking-form {
+  animation: slideUp 0.5s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Dialog Styles */
+.area-dialog-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+/* Success Message Animation */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.success-message {
+  animation: slideIn 0.3s ease-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .area-card {
+    margin-bottom: 16px;
+  }
+  
+  .booking-form {
+    padding: 16px !important;
+  }
+  
+  .MuiDialog-paper {
+    margin: 16px;
+  }
+  
+  .area-features {
+    margin-top: 8px;
+  }
+}
+
+/* Date and Time Picker Styles */
+.MuiPickersDay-root.Mui-selected {
+  background-color: #ff4757 !important;
+}
+
+.MuiClock-pin {
+  background-color: #ff4757 !important;
+}
+
+.MuiClockPointer-root {
+  background-color: #ff4757 !important;
+}
+
+.MuiClockPointer-thumb {
+  border-color: #ff4757 !important;
+}
+
+/* Form Field Animations */
+.MuiTextField-root {
+  transition: transform 0.2s ease;
+}
+
+.MuiTextField-root:focus-within {
+  transform: scale(1.02);
+}
+
+/* Button Loading State */
+.loading-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.loading-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+} 

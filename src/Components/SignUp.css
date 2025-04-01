@@ -1,0 +1,134 @@
+.MuiPaper-root {
+  background-color: #ffffff;
+  border-radius: 16px !important;
+}
+
+.MuiStepper-root {
+  background-color: transparent !important;
+}
+
+.MuiStepIcon-root.Mui-active {
+  color: #ff4757 !important;
+}
+
+.MuiStepIcon-root.Mui-completed {
+  color: #2ecc71 !important;
+}
+
+.MuiButton-contained {
+  background-color: #ff4757 !important;
+  color: white !important;
+  padding: 8px 24px !important;
+  font-weight: 500 !important;
+  text-transform: none !important;
+}
+
+.MuiButton-contained:hover {
+  background-color: #ff3747 !important;
+}
+
+.MuiTextField-root {
+  margin-bottom: 16px !important;
+}
+
+.MuiInputLabel-root.Mui-focused {
+  color: #ff4757 !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #ff4757 !important;
+}
+
+.MuiCheckbox-root.Mui-checked {
+  color: #ff4757 !important;
+}
+
+/* Form transitions */
+.form-transition-enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.form-transition-enter-active {
+  opacity: 1;
+  transform: translateX(0%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.form-transition-exit {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.form-transition-exit-active {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 300ms, transform 300ms;
+}
+
+/* Error messages */
+.error-message {
+  color: #e74c3c;
+  font-size: 0.75rem;
+  margin-top: 4px;
+  margin-left: 14px;
+}
+
+/* Success animation */
+@keyframes checkmark {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.success-checkmark {
+  animation: checkmark 0.5s ease-in-out forwards;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .MuiContainer-root {
+    padding: 16px !important;
+  }
+
+  .MuiPaper-root {
+    padding: 16px !important;
+  }
+
+  .MuiStepper-root {
+    margin: 24px 0 !important;
+  }
+
+  .MuiStepLabel-label {
+    font-size: 0.875rem !important;
+  }
+}
+
+/* Password strength indicator */
+.password-strength {
+  height: 4px;
+  border-radius: 2px;
+  margin-top: 8px;
+  transition: all 0.3s ease;
+}
+
+.strength-weak {
+  background-color: #e74c3c;
+  width: 33%;
+}
+
+.strength-medium {
+  background-color: #f1c40f;
+  width: 66%;
+}
+
+.strength-strong {
+  background-color: #2ecc71;
+  width: 100%;
+} 

@@ -1,0 +1,151 @@
+.MuiCard-root {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.MuiCardMedia-root {
+  position: relative;
+  overflow: hidden;
+}
+
+.MuiCardMedia-root img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.MuiCardMedia-root:hover img {
+  transform: scale(1.05);
+}
+
+.MuiChip-root {
+  font-weight: 500 !important;
+}
+
+.MuiTabs-root {
+  margin-bottom: 2rem;
+}
+
+.MuiTab-root {
+  font-weight: 500 !important;
+  min-width: 120px !important;
+}
+
+.MuiTab-root.Mui-selected {
+  font-weight: 600 !important;
+}
+
+.menu-category-tabs {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.menu-item-price {
+  font-size: 1.25rem !important;
+  font-weight: 600 !important;
+  color: #ff4757 !important;
+}
+
+.menu-item-description {
+  color: #666 !important;
+  margin: 0.5rem 0 1rem !important;
+  line-height: 1.5 !important;
+}
+
+.favorite-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  padding: 0.25rem !important;
+}
+
+.favorite-button:hover {
+  background-color: rgba(255, 255, 255, 1) !important;
+}
+
+/* Animation for card hover */
+@keyframes cardHover {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-8px);
+  }
+}
+
+/* Custom scrollbar for menu categories */
+.MuiTabs-scroller::-webkit-scrollbar {
+  height: 6px;
+}
+
+.MuiTabs-scroller::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.MuiTabs-scroller::-webkit-scrollbar-thumb {
+  background: #ff4757;
+  border-radius: 3px;
+}
+
+.MuiTabs-scroller::-webkit-scrollbar-thumb:hover {
+  background: #ff3747;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .MuiTab-root {
+    min-width: 100px !important;
+    padding: 6px 12px !important;
+  }
+
+  .MuiCardContent-root {
+    padding: 16px !important;
+  }
+
+  .menu-item-description {
+    font-size: 0.875rem !important;
+  }
+}
+
+/* Loading skeleton animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton-loading {
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* Add to cart button animation */
+.add-to-cart-btn {
+  transition: all 0.3s ease !important;
+}
+
+.add-to-cart-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Category badge styles */
+.category-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.25rem 0.75rem;
+  background-color: rgba(255, 71, 87, 0.9);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  z-index: 1;
+} 
