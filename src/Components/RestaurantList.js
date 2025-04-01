@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import { Link } from 'react-router-dom';
 import {
   Container,
@@ -120,15 +120,8 @@ const categories = [
 ];
 
 const RestaurantList = () => {
- 
-  const [isLoaded, setIsLoaded] = useState(false);
   const [favorites, setFavorites] = useState({});
   const [searchQuery, setSearchQuery] = useState("");
-
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
-
   const toggleFavorite = (e, id) => {
     e.preventDefault();
     setFavorites(prev => ({

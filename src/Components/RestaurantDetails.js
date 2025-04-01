@@ -28,7 +28,6 @@ import {
   Circle,
   Stop,
 } from '@mui/icons-material';
-import { useParams } from 'react-router-dom';
 
 // Sample restaurant data (you can replace this with API calls)
 const restaurantData = {
@@ -144,7 +143,6 @@ const restaurantData = {
 };
 
 const RestaurantDetails = () => {
-  const { id } = useParams();
   const theme = useTheme();
   const [selectedCategory, setSelectedCategory] = useState(0);
   const [favorite, setFavorite] = useState(false);
